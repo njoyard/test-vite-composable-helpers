@@ -88,5 +88,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@nullvoxpopuli/ember-composable-helpers": "^5.3.1",
+    "my-addon": "file:../my-addon"
   }
 }

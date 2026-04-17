@@ -1,12 +1,12 @@
 import { pageTitle } from 'ember-page-title';
-import { WelcomePage } from 'ember-welcome-page';
+import TestComponent from '../components/test-component.gjs';
+
+const items = ['one', 'two', 'three', 'four', 'five'];
 
 <template>
   {{pageTitle "ViteApp"}}
 
   {{outlet}}
 
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage @extension="gjs" />
-  {{! Feel free to remove this! }}
+  <TestComponent @items={{items}} />
 </template>
